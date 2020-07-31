@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
+import SocialLinks from '../SocialLinks';
+
 const Hero = () => (
   <header>
     Hero Section
@@ -15,6 +17,7 @@ const Hero = () => (
       </p>
       <p>Have a project in mind?</p>
       <button>Let's Chat</button>
+      <SocialLinks />
     </article>
   </header>
 );
