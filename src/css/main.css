@@ -11,3 +11,20 @@ Global
   padding: 0;
   box-sizing: border-box;
 }
+
+.flex-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.fkex-container > * {
+  flex-grow: 1;
+}
+
+.hero-img {
+  /* display: none;
+  flex-grow: 1; */
+  width: 500px;
+}
