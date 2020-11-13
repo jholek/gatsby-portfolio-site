@@ -72,3 +72,5 @@ yarn-error.log
 .eslintrc.json
 .prettierrc
 settings.json
+.prettierignore
+.prettierrc
