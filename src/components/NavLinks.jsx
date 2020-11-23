@@ -24,16 +24,14 @@ const links = [
   },
 ];
 
-const NavLinks = () => {
-  return (
-    <>
-      {links.map((link) => (
-        <li key={link.id}>
-          <Link to={link.url}>{link.name}</Link>
-        </li>
-      ))}
-    </>
-  );
-};
+const NavLinks = () => (
+  <>
+    {links.map((link) => (
+      <li key={link.id}>
+        <Link to={link.url}>{link.name}</Link>
+      </li>
+    ))}
+  </>
+);
 
 export default NavLinks;

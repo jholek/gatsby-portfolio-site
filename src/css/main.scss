@@ -12,16 +12,36 @@ Global
   box-sizing: border-box;
 }
 
+/* 
+=============== 
+Variables
+===============
+*/
+
+$content-container: 80vw;
+
+/* 
+=============== 
+Layout
+===============
+*/
+
 .flex-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  background-color:blue;
 }
 
 .flex-container > * {
   flex-grow: 1;
+}
+
+.content__wrapper {
+  width: 100%;
+  max-width: 72rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hero-img {
@@ -29,3 +49,9 @@ Global
   flex-grow: 1; */
   width: 500px;
 }
+
+/* 
+=============== 
+Style Classes
+===============
+*/

@@ -29,16 +29,16 @@ const Hero = () => {
       <article>
         <div className='flex-container'>
           <div className='hero-text'>
-            <h6>Hello, I'm Jeff</h6>
-            <Link to='/about/'>More About Me --></Link>
-            <h1>Let's talk product.</h1>
+            <h6>Hello, I&#39;m Jeff</h6>
+            <Link to='/about/'>More About Me --&gt;</Link>
+            <h1>Let&#39;s talk product.</h1>
             <p>
-              Whether it’s bringing a vision to life, delighting users or simply
-              trying to raise the bar, I work alongside organizations to find
-              novel solutions to everyday challenges.
+              Whether it&#39;s bringing a vision to life, delighting users or
+              simply trying to raise the bar, I work alongside organizations to
+              find novel solutions to everyday challenges.
             </p>
             <p>Have a project in mind?</p>
-            <button>Let's Chat</button>
+            <button type='button'>Let&#39;s Chat</button>
             <SocialLinks />
           </div>
           <div className='hero-img'>

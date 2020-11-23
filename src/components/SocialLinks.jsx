@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 
 const links = [
@@ -15,18 +14,16 @@ const links = [
   },
 ];
 
-const SocialLinks = () => {
-  return (
-    <>
-      {links.map((link) => (
-        <li key={link.id}>
-          <a href={link.url} target='_blank' rel='noopener'>
-            {link.icon}
-          </a>
-        </li>
-      ))}
-    </>
-  );
-};
+const SocialLinks = () => (
+  <>
+    {links.map((link) => (
+      <li key={link.id}>
+        <a href={link.url} target='_blank' rel='noopener noreferrer'>
+          {link.icon}
+        </a>
+      </li>
+    ))}
+  </>
+);
 
 export default SocialLinks;
