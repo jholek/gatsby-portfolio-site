@@ -25,24 +25,27 @@ const Hero = () => {
 
   return (
     <header>
-      Hero Section
       <article>
-        <div className='flex-container'>
-          <div className='hero-text'>
-            <h6>Hello, I&#39;m Jeff</h6>
-            <Link to='/about/'>More About Me --&gt;</Link>
-            <h1>Let&#39;s talk product.</h1>
+        <div className='hero__container content__wrapper'>
+          <div className='hero__text'>
+            <p>HELLO, I&#39;M JEFF!</p>
+            <h1 className='hero__text--title'>
+              Let&#39;s talk{' '}
+              <span className='hero__text--highlight'>product.</span>
+            </h1>
             <p>
               Whether it&#39;s bringing a vision to life, delighting users or
               simply trying to raise the bar, I work alongside organizations to
               find novel solutions to everyday challenges.
             </p>
-            <p>Have a project in mind?</p>
-            <button type='button'>Let&#39;s Chat</button>
-            <SocialLinks />
+            <div className='hero__actions'>
+              <button type='button' className='btn'>
+                MY CV
+              </button>
+              <SocialLinks />
+            </div>
           </div>
-          <div className='hero-img'>
-            {/* Flexbox conflict with Fluid style Gatsby Image. Just make static? */}
+          <div className='hero__img'>
             <Image fluid={fluid} />
           </div>
         </div>

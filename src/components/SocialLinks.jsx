@@ -16,13 +16,20 @@ const links = [
 
 const SocialLinks = () => (
   <>
-    {links.map((link) => (
-      <li key={link.id}>
-        <a href={link.url} target='_blank' rel='noopener noreferrer'>
-          {link.icon}
-        </a>
-      </li>
-    ))}
+    <ul className='social__links'>
+      {links.map((link) => (
+        <li key={link.id} className='padding__modifier'>
+          <a
+            href={link.url}
+            className='social__links--item'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            {link.icon}
+          </a>
+        </li>
+      ))}
+    </ul>
   </>
 );
 

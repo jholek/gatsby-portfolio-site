@@ -16,6 +16,13 @@ module.exports = {
         path: `${__dirname}/src/assets/`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`inter`, `roboto`],
+        display: 'swap',
+      },
+    },
     // {
     //   resolve: 'gatsby-source-strapi',
     //   options: {
