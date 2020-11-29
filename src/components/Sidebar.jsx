@@ -12,8 +12,8 @@ const Sidebar = ({ toggleSidebar, isOpen }) => {
         <FaTimes />
       </button>
       <div className='sidebar__container'>
-        <NavLinks styleClass='sidebar__links' />
-        <SocialLinks styleClass='sidebar__icons' />
+        <NavLinks styleClass={`${isOpen ? 'sidebar__links' : ''}`} />
+        <SocialLinks styleClass={`${isOpen ? 'sidebar__icons' : ''}`} />
       </div>
     </aside>
   );
