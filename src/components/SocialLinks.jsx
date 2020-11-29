@@ -14,9 +14,9 @@ const links = [
   },
 ];
 
-const SocialLinks = () => (
+const SocialLinks = ({ styleClass }) => (
   <>
-    <ul className='social__links'>
+    <ul className={`social__links ${styleClass ? styleClass : ''}`}>
       {links.map((link) => (
         <li key={link.id} className='padding__modifier'>
           <a

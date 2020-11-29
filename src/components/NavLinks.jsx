@@ -4,33 +4,36 @@ import { Link } from 'gatsby';
 const links = [
   {
     id: 1,
-    name: 'home',
-    url: '/',
+    name: 'resume',
+    url: '/resume/',
   },
   {
     id: 2,
-    name: 'about',
-    url: '/about/',
-  },
-  {
-    id: 3,
     name: 'projects',
     url: '/projects/',
   },
   {
-    id: 4,
+    id: 3,
     name: 'blog',
     url: '/blog/',
   },
+  {
+    id: 4,
+    name: 'contact',
+    url: '/#contact',
+    mod: 'navbar__btn',
+  },
 ];
 
-const NavLinks = () => (
+const NavLinks = ({ styleClass }) => (
   <>
-    {links.map((link) => (
-      <li key={link.id}>
-        <Link to={link.url}>{link.name}</Link>
-      </li>
-    ))}
+    <ul className={`${styleClass ? styleClass : ''}`}>
+      {links.map((link) => (
+        <li key={link.id} className={`${link.mod ? link.mod : ''}`}>
+          <Link to={link.url}>{link.name}</Link>
+        </li>
+      ))}
+    </ul>
   </>
 );
 

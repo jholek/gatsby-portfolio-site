@@ -39,7 +39,7 @@ const Hero = () => {
               find novel solutions to everyday challenges.
             </p>
             <div className='hero__actions'>
-              <button type='button' className='btn'>
+              <button type='button' className='btn__primary'>
                 MY CV
               </button>
               <SocialLinks />
