@@ -34,9 +34,8 @@ const Hero = () => {
               <span className='hero__text--highlight'>product.</span>
             </h1>
             <p>
-              Whether it&#39;s bringing a vision to life, delighting users or
-              simply trying to raise the bar, I work alongside organizations to
-              find novel solutions to everyday challenges.
+              I work alongside organizations to find novel solutions to everyday
+              challenges though user centric software.
             </p>
             <div className='hero__actions'>
               <button type='button' className='btn__primary'>
