@@ -47,6 +47,7 @@ h5,
 h6 {
   font-family: $font-header;
   line-height: 3.75rem;
+  font-weight: 100;
 }
 
 p {
@@ -62,7 +63,7 @@ a {
 }
 
 .btn__primary {
-  text-transform: uppercase;
+  text-transform: capitalize;
   background: $primary;
   padding: 1rem 2rem;
   display: inline-block;
@@ -118,10 +119,10 @@ Classes
 /* ___Navbar___ */
 
 .navbar {
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  // z-index: 200;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
   width: 100%;
   height: $nav-height;
   display: flex;
@@ -176,7 +177,6 @@ Classes
   .navbar__links a {
     color: black;
     font-family: $font-body;
-    font-weight: bold;
     padding: 0.5rem 0;
     text-transform: capitalize;
   }
@@ -234,7 +234,6 @@ Classes
   text-transform: capitalize;
   color: white;
   font-family: $font-header;
-  font-weight: bold;
   margin-bottom: 1rem;
   font-size: 2rem;
   transition: $transition;
@@ -335,7 +334,7 @@ Classes
   // justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  min-height: calc(100vh - 4.25rem);
+  min-height: 100vh;
   // margin-top: $nav-height;
 }
 
@@ -344,7 +343,9 @@ Classes
 }
 
 .hero__text {
+  padding-right: 4rem;
   // margin-top: 15rem;
+  // flex: 0 0 60%;
 }
 
 .hero__text--title {
@@ -365,10 +366,39 @@ Classes
 
 .hero__img {
   /* display: none;
-  flex-grow: 1; */
+    flex-grow: 1; */
   // max-width: 30rem;
+  // flex: 0 0 40%;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 6rem;
+}
+
+@media screen and (max-width: 1366px) {
+  .hero__container {
+    margin-top: $nav-height;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    // min-height: 0vh;
+  }
+  .hero__container > * {
+    flex: 0 0 100%;
+  }
+  .hero__text {
+    padding: 0 0;
+    order: 1;
+  }
+  .hero__text > p {
+    font-size: 1.25rem;
+  }
+  .hero__actions {
+    margin-top: 1.5rem;
+  }
+
+  .hero__img {
+    padding: 0 2rem;
+  }
 }
 
 /* ___Social Links___ */

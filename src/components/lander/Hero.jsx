@@ -40,7 +40,7 @@ const Hero = () => {
             </p>
             <div className='hero__actions'>
               <button type='button' className='btn__primary'>
-                MY CV
+                My CV
               </button>
               <SocialLinks />
             </div>
