@@ -337,11 +337,10 @@ Classes
   align-items: center;
   flex-wrap: wrap;
   margin-top: 8rem;
-  min-height: 50vh;
 }
 
-.hero__container > * {
-  flex: 0 0 50%;
+.hero__text {
+  flex: 0 0 55%;
 }
 
 .hero__text--title {
@@ -363,11 +362,7 @@ Classes
 .hero__img {
   margin-left: auto;
   margin-right: auto;
-}
-
-.wave__contianer {
-  position: relative;
-  min-height: 30vh;
+  flex: 0 0 45%;
 }
 
 .hero__background {
@@ -376,11 +371,21 @@ Classes
   overflow: hidden;
 }
 
+.hero__container--background {
+  position: relative;
+  display: block;
+}
+
 .wave__front {
   fill: $primary;
-  position: absolute;
   z-index: 1;
-  bottom: 0;
+  margin-top: 2rem;
+}
+
+.wave__front > *,
+*::after,
+*::before {
+  display: block;
 }
 
 .wave__back {
@@ -388,6 +393,18 @@ Classes
   opacity: 0.101;
   position: absolute;
   bottom: 0;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero__text--title {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .hero__text > p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 976px) {
@@ -409,14 +426,7 @@ Classes
   }
 
   .hero__text--title {
-    font-size: 3rem;
-    line-height: 3rem;
     padding: 1.5rem 0 1.5rem 0;
-  }
-
-  .hero__text > p {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
   }
 
   .hero__actions {
@@ -459,4 +469,11 @@ Classes
 
 .social__links--item:hover {
   color: $secondary-light-1;
+}
+
+/* ___Services___ */
+
+.services__container {
+  height: 40rem;
+  background-color: $primary;
 }
