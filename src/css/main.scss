@@ -174,6 +174,9 @@ Classes
   .navbar__links li {
     margin-right: 4rem;
   }
+  .navbar__links li:last-child {
+    margin-right: 0rem;
+  }
   .navbar__links a {
     color: black;
     font-family: $font-body;
@@ -331,21 +334,14 @@ Classes
 
 .hero__container {
   display: flex;
-  // justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  min-height: 100vh;
-  // margin-top: $nav-height;
+  margin-top: 8rem;
+  min-height: 50vh;
 }
 
 .hero__container > * {
   flex: 0 0 50%;
-}
-
-.hero__text {
-  padding-right: 4rem;
-  // margin-top: 15rem;
-  // flex: 0 0 60%;
 }
 
 .hero__text--title {
@@ -365,57 +361,83 @@ Classes
 }
 
 .hero__img {
-  /* display: none;
-    flex-grow: 1; */
-  // max-width: 30rem;
-  // flex: 0 0 40%;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 6rem;
 }
 
-@media screen and (max-width: 767px) {
+.wave__contianer {
+  position: relative;
+  min-height: 30vh;
+}
+
+.hero__background {
+  height: auto;
+  resize: horizontal;
+  overflow: hidden;
+}
+
+.wave__front {
+  fill: $primary;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+}
+
+.wave__back {
+  fill: #b49f4d;
+  opacity: 0.101;
+  position: absolute;
+  bottom: 0;
+}
+
+@media screen and (max-width: 976px) {
   .hero__container {
     margin-top: $nav-height;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    // min-height: 0vh;
+    min-height: 0vh;
   }
+
   .hero__container > * {
     flex: 0 0 100%;
   }
+
   .hero__text {
     padding: 0 0;
     order: 1;
   }
+
+  .hero__text--title {
+    font-size: 3rem;
+    line-height: 3rem;
+    padding: 1.5rem 0 1.5rem 0;
+  }
+
   .hero__text > p {
     font-size: 1.25rem;
+    line-height: 1.5rem;
   }
+
   .hero__actions {
     margin-top: 1.5rem;
   }
 
   .hero__img {
-    padding: 0 2rem;
+    margin: 1.5rem auto;
+    max-width: 50vw;
   }
 }
 
 @media screen and (max-width: 479px) {
-  .hero__container {
-    min-height: 0vh;
+  .hero__text > p {
+    font-size: 1rem;
   }
+
   .hero__text--title {
     font-size: 2rem;
     line-height: 2rem;
     padding: 0.5rem 0 1rem 0;
-  }
-  .hero__img {
-    margin: 1.5rem 0;
-  }
-  .hero__text > p {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 }
 

@@ -28,7 +28,7 @@ const Hero = () => {
       <article>
         <div className='hero__container content__wrapper'>
           <div className='hero__text'>
-            <p>HELLO, I&#39;M JEFF!</p>
+            <p>HELLO, I&#39;M JEFF.</p>
             <h1 className='hero__text--title'>
               Let&#39;s talk{' '}
               <span className='hero__text--highlight'>product.</span>
@@ -45,7 +45,7 @@ const Hero = () => {
             </div>
           </div>
           <div className='hero__img'>
-            <Image fluid={fluid} />
+            <Image alt='cartoon hero avatar' fluid={fluid} />
           </div>
         </div>
       </article>
