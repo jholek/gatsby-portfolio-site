@@ -26,7 +26,7 @@ const Hero = () => {
   return (
     <header>
       <article className='hero__container--background'>
-        <div className='hero__container content__wrapper'>
+        <div className='hero__container content__wrapper flex__container'>
           <div className='hero__text'>
             <p>HELLO, I&#39;M JEFF.</p>
             <h1 className='hero__text--title'>

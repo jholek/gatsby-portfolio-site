@@ -93,6 +93,12 @@ a {
   margin-left: auto;
 }
 
+.flex__container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 /* 
 =============== 
 Page Styles
@@ -333,9 +339,6 @@ Classes
 /* ___Hero Section___ */
 
 .hero__container {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
   margin-top: 8rem;
 }
 
@@ -380,6 +383,7 @@ Classes
   fill: $primary;
   z-index: 1;
   margin-top: 2rem;
+  margin-bottom: -1px;
 }
 
 .wave__front > *,
@@ -473,7 +477,51 @@ Classes
 
 /* ___Services___ */
 
-.services__container {
-  height: 40rem;
+.services {
   background-color: $primary;
+}
+
+.expertise {
+  flex: 0 0 25%;
+}
+
+.services__item--card {
+  flex: 0 0 25%;
+  border-radius: 10px;
+  background-color: white;
+  height: 100%;
+}
+
+/* ___Projects___ */
+
+.projects__background {
+  height: auto;
+  resize: horizontal;
+  overflow: hidden;
+}
+
+.projects__container--background {
+  position: relative;
+  display: inline-block;
+}
+
+.wave__front--bottom {
+  fill: $primary;
+  z-index: 1;
+  margin-bottom: 2rem;
+  margin-top: -1px;
+}
+
+.wave__front--bottom > *,
+*::after,
+*::before {
+  display: inline-block;
+}
+
+.wave__back--bottom {
+  fill: #b49f4d;
+  opacity: 0.101;
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
