@@ -38,9 +38,6 @@ const Hero = () => {
               challenges though user centric software.
             </p>
             <div className='hero__actions'>
-              <button type='button' className='btn__primary'>
-                My CV
-              </button>
               <SocialLinks />
             </div>
           </div>

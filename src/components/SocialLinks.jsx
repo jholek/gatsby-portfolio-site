@@ -1,14 +1,23 @@
 import React from 'react';
-import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
+import {
+  FaOdnoklassnikiSquare,
+  FaGithubSquare,
+  FaLinkedin,
+} from 'react-icons/fa';
 
 const links = [
   {
     id: 1,
-    icon: <FaGithubSquare />,
+    icon: <FaOdnoklassnikiSquare />,
     url: 'https://www.github.com/jholek',
   },
   {
     id: 2,
+    icon: <FaGithubSquare />,
+    url: 'https://www.github.com/jholek',
+  },
+  {
+    id: 3,
     icon: <FaLinkedin />,
     url: 'https://www.linkedin.com/in/jeffholek/',
   },

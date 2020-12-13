@@ -51,7 +51,7 @@ export default [
     id: 3,
     title: 'Title 3',
     description:
-      'Lean on my experience in B2B and B2C companies ranging from legacy Enterprise applications to hopeful Start Ups. Need someone to help achieve your vision?',
+      'Lean on my experience in B2B and B2C companies ranging from legacy Enterprise applications to hopeful Start Ups. Need someone to help achieve your vision?Lean on my experience in B2B and B2C companies ranging from legacy Enterprise applications to hopeful Start Ups. Need someone to help achieve your vision?',
     offers: [
       {
         id: 1,

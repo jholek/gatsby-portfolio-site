@@ -46,8 +46,20 @@ h4,
 h5,
 h6 {
   font-family: $font-header;
-  line-height: 3.75rem;
   font-weight: 100;
+}
+
+h1 {
+  font-size: 3.75rem;
+  line-height: 3.75rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 p {
@@ -62,9 +74,9 @@ a {
   text-decoration: none;
 }
 
-.btn__primary {
+.btn {
+  border-radius: $radius;
   text-transform: capitalize;
-  background: $primary;
   padding: 1rem 2rem;
   display: inline-block;
   -webkit-transition: $transition;
@@ -74,13 +86,51 @@ a {
   border: 2px solid transparent;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  border-radius: $radius;
-  color: white;
-}
 
-.btn__primary:hover {
-  background: $secondary-light-1;
-  color: $grey-1;
+  &__primary {
+    background: $primary;
+    color: white;
+  }
+
+  &__secondary {
+    background: $secondary;
+    color: $grey-1;
+  }
+
+  &__outlined--primary {
+    border: 2px solid $primary;
+    border-radius: $radius;
+    background: none;
+    color: $primary;
+
+    &:hover {
+      background: white;
+      color: $grey-1;
+    }
+  }
+  &__outlined--secondary {
+    border: 2px solid $secondary;
+    border-radius: $radius;
+    background: none;
+    color: $secondary;
+
+    &:hover {
+      background: $secondary-light-1;
+      color: $grey-1;
+    }
+  }
+
+  &__outlined--white {
+    border: 2px solid white;
+    border-radius: $radius;
+    background: none;
+    color: white;
+  }
+
+  &:hover {
+    background: $secondary-light-1;
+    color: $grey-1;
+  }
 }
 
 .padding__modifier {
@@ -95,8 +145,15 @@ a {
 
 .flex__container {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
+}
+
+.push {
+  text-align: right;
+}
+
+.text__color--invert > * {
+  color: white;
 }
 
 /* 
@@ -339,6 +396,7 @@ Classes
 /* ___Hero Section___ */
 
 .hero__container {
+  align-items: center;
   margin-top: 8rem;
 }
 
@@ -358,6 +416,7 @@ Classes
 
 .hero__actions {
   margin-top: 4.5rem;
+  margin-left: -0.45rem;
   display: flex;
   justify-content: space-between;
 }
@@ -475,21 +534,69 @@ Classes
   color: $secondary-light-1;
 }
 
-/* ___Services___ */
+/* ___Services Styles___ */
 
 .services {
   background-color: $primary;
+
+  &__title {
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+}
+
+.summary {
+  margin-bottom: 2rem;
+
+  &__description {
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (max-width: 976px) {
+    &__cta--button {
+      width: 100%;
+    }
+  }
+}
+
+.s-card {
+  border-radius: 10px;
+  background-color: white;
+}
+
+/* ___Services Flex___ */
+
+.s-card {
+  &__wrap--inner {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+
+    @media screen and (max-width: 1340px) {
+      width: 33%;
+    }
+
+    // @media screen and (max-width: 1024px) {
+    //   width: 33%;
+    // }
+
+    @media screen and (max-width: 976px) {
+      width: 100%;
+    }
+
+    // @media screen and (max-width: 479px) {
+    // }
+  }
 }
 
 .expertise {
-  flex: 0 0 25%;
+  @media screen and (max-width: 1340px) {
+    width: 100%;
+  }
 }
 
-.services__item--card {
-  flex: 0 0 25%;
-  border-radius: 10px;
-  background-color: white;
-  height: 100%;
+.flexible {
+  flex-grow: 1;
 }
 
 /* ___Projects___ */
