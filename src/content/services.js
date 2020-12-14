@@ -1,73 +1,69 @@
 export default [
   {
     id: 1,
-    title: 'Title 1',
+    title: 'Product Management',
     description:
       'Lean on my experience in B2B and B2C companies ranging from legacy Enterprise applications to hopeful Start Ups. Need someone to help achieve your vision?',
     offers: [
       {
         id: 1,
-        value: 'offer1',
+        value: 'Feature Prioritization / Roadmapping',
       },
       {
         id: 2,
-        value: 'offer2',
+        value: 'Stakeholder Management',
       },
       {
         id: 3,
-        value: 'offer3',
+        value: 'User Adoption and Onboarding',
       },
       {
         id: 4,
-        value: 'offer4',
+        value: 'Market Intelligence',
       },
     ],
   },
   {
     id: 2,
-    title: 'Title 2',
+    title: 'Growth & Operations',
     description:
-      'Lean on my experience in B2B and B2C companies ranging from legacy Enterprise applications to hopeful Start Ups. Need someone to help achieve your vision?',
+      'Want some ‘fresh-eyes’ to help embrace change? I have designed, implemented and managed systems that promote scalability, sustainability and profitability.',
     offers: [
       {
         id: 1,
-        value: 'offer1',
+        value: 'Dev / Marketing / Product Ops',
       },
       {
         id: 2,
-        value: 'offer2',
+        value: 'System Administration & Integration',
       },
       {
         id: 3,
-        value: 'offer3',
+        value: 'Data & Analytics',
       },
       {
         id: 4,
-        value: 'offer4',
+        value: 'Process Optimization',
       },
     ],
   },
   {
     id: 3,
-    title: 'Title 3',
+    title: 'Software Development',
     description:
-      'Lean on my experience in B2B and B2C companies ranging from legacy Enterprise applications to hopeful Start Ups. Need someone to help achieve your vision?Lean on my experience in B2B and B2C companies ranging from legacy Enterprise applications to hopeful Start Ups. Need someone to help achieve your vision?',
+      'I do more than just talk. A lifelong student of technology, I continually work to gain a deeper appreciation for the makers of the digital era. If I can pitch in too, all the more reason to participate!',
     offers: [
       {
         id: 1,
-        value: 'offer1',
+        value: 'UI / UX / CX Design',
       },
       {
         id: 2,
-        value: 'offer2',
+        value: 'Web Development',
       },
       {
         id: 3,
-        value: 'offer3',
-      },
-      {
-        id: 4,
-        value: 'offer4',
+        value: 'Simple Full Stack Applications',
       },
     ],
   },

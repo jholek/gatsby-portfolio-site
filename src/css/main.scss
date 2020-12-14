@@ -10,6 +10,7 @@ $font-header: 'inter';
 $font-body: 'roboto';
 
 $primary: #2465e1;
+$primary-dark: #00296b;
 $secondary: #fdc500;
 $secondary-light-1: #ffd500;
 
@@ -46,7 +47,7 @@ h4,
 h5,
 h6 {
   font-family: $font-header;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 h1 {
@@ -67,6 +68,11 @@ p {
   font-size: 1.5rem;
   line-height: 1.75rem;
 }
+
+.services p {
+  font-size: 1rem;
+}
+
 ul {
   list-style-type: none;
 }
@@ -214,7 +220,7 @@ Classes
   font-size: 2rem;
   background: transparent;
   border-color: transparent;
-  color: $primary;
+  color: $primary-dark;
   cursor: pointer;
   transition: $transition;
 }
@@ -272,7 +278,7 @@ Classes
 /* ___Sidebar___ */
 
 .sidebar {
-  background: $primary;
+  background: $primary-dark;
   position: fixed;
   top: 0;
   left: 0;
@@ -415,8 +421,8 @@ Classes
 }
 
 .hero__actions {
-  margin-top: 4.5rem;
-  margin-left: -0.45rem;
+  margin-top: 2rem;
+  margin-left: -0.3rem;
   display: flex;
   justify-content: space-between;
 }
@@ -429,7 +435,6 @@ Classes
 
 .hero__background {
   height: auto;
-  resize: horizontal;
   overflow: hidden;
 }
 
@@ -439,7 +444,7 @@ Classes
 }
 
 .wave__front {
-  fill: $primary;
+  fill: $primary-dark;
   z-index: 1;
   margin-top: 2rem;
   margin-bottom: -1px;
@@ -453,7 +458,7 @@ Classes
 
 .wave__back {
   fill: #b49f4d;
-  opacity: 0.101;
+  opacity: 0.2;
   position: absolute;
   bottom: 0;
   z-index: -1;
@@ -521,8 +526,8 @@ Classes
   align-items: center;
 }
 .social__links--item {
-  font-size: 2.5rem;
-  color: $primary;
+  font-size: 2rem;
+  color: $primary-dark;
   transition: $transition;
 }
 
@@ -537,19 +542,30 @@ Classes
 /* ___Services Styles___ */
 
 .services {
-  background-color: $primary;
+  background-color: $primary-dark;
 
   &__title {
-    font-weight: 700;
+    font-weight: 300;
     margin-bottom: 2rem;
+  }
+
+  @media screen and (max-width: 479px) {
+    &__title {
+      font-size: 1.5rem;
+    }
   }
 }
 
 .summary {
   margin-bottom: 2rem;
 
-  &__description {
-    margin-bottom: 1rem;
+  &__title {
+    padding-top: 2rem;
+  }
+
+  &__cta {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
   }
 
   @media screen and (max-width: 976px) {
@@ -557,20 +573,46 @@ Classes
       width: 100%;
     }
   }
+  @media screen and (max-width: 479px) {
+    &__title {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.expertise__container {
+  padding-bottom: 5rem;
 }
 
 .s-card {
   border-radius: 10px;
   background-color: white;
+  padding: 1rem;
+
+  // &:hover {
+  //   border: 0.2rem solid $secondary;
+  //   // padding: -0.2rem;
+  //   // box-shadow: 0rem 0.5rem 0.5rem black;
+  //   // transform: translateY(-1rem);
+  //   // transition: $transition;
+  // }
+}
+
+.card__padding {
+  padding: 0.5rem;
 }
 
 /* ___Services Flex___ */
 
 .s-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
   &__wrap--inner {
+    flex-direction: column;
     display: flex;
     width: 25%;
-    flex-direction: column;
 
     @media screen and (max-width: 1340px) {
       width: 33%;
@@ -590,6 +632,12 @@ Classes
 }
 
 .expertise {
+  &__description {
+    @media screen and (max-width: 1340px) {
+      margin-bottom: 2rem;
+    }
+  }
+
   @media screen and (max-width: 1340px) {
     width: 100%;
   }
@@ -613,7 +661,7 @@ Classes
 }
 
 .wave__front--bottom {
-  fill: $primary;
+  fill: $primary-dark;
   z-index: 1;
   margin-bottom: 2rem;
   margin-top: -1px;
@@ -627,7 +675,7 @@ Classes
 
 .wave__back--bottom {
   fill: #b49f4d;
-  opacity: 0.101;
+  opacity: 0.2;
   position: absolute;
   top: 0;
   z-index: -1;

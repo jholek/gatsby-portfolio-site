@@ -8,7 +8,7 @@ const Services = () => (
     <div className='content__wrapper'>
       <div className='summary text__color--invert'>
         <div className='summary__title'>
-          <h2 className='services__title'>Summary.</h2>
+          <h2 className='services__title'>About.</h2>
         </div>
 
         <div className='summary__description'>
@@ -23,13 +23,13 @@ const Services = () => (
         <div className='summary__cta push'>
           <button
             type='button'
-            className='btn btn__outlined--white summary__cta--button'
+            className='btn btn__primary summary__cta--button'
           >
             View Resume
           </button>
         </div>
       </div>
-      <div className='flex__container'>
+      <div className='flex__container expertise__container'>
         <div className='expertise s-card__wrap--inner text__color--invert'>
           <div className='expertise__title'>
             <h2 className='services__title'>Expertise.</h2>
@@ -47,7 +47,7 @@ const Services = () => (
         {services.map((service) => {
           const { id, title, description, offers } = service;
           return (
-            <div key={id} className='s-card s-card__wrap--inner'>
+            <div key={id} className='s-card__wrap--inner card__padding'>
               <ServiceCard
                 title={title}
                 description={description}

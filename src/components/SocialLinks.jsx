@@ -1,25 +1,21 @@
 import React from 'react';
-import {
-  FaOdnoklassnikiSquare,
-  FaGithubSquare,
-  FaLinkedin,
-} from 'react-icons/fa';
+import { FaAddressCard, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 const links = [
   {
     id: 1,
-    icon: <FaOdnoklassnikiSquare />,
+    icon: <FaAddressCard />,
     url: 'https://www.github.com/jholek',
   },
   {
     id: 2,
-    icon: <FaGithubSquare />,
-    url: 'https://www.github.com/jholek',
+    icon: <FaLinkedinIn />,
+    url: 'https://www.linkedin.com/in/jeffholek/',
   },
   {
     id: 3,
-    icon: <FaLinkedin />,
-    url: 'https://www.linkedin.com/in/jeffholek/',
+    icon: <FaGithub />,
+    url: 'https://www.github.com/jholek',
   },
 ];
 

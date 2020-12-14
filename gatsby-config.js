@@ -17,9 +17,9 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: 'gatsby-plugin-google-fonts',
       options: {
-        fonts: [`inter`, `roboto`],
+        fonts: ['inter:100,300,500,700,900', 'roboto'],
         display: 'swap',
       },
     },
