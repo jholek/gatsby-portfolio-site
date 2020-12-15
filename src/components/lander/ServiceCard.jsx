@@ -5,7 +5,9 @@ const ServiceCard = ({ title, description, offers }) => (
   <>
     <div className='s-card'>
       <div className='s-card__title'>
-        <h3>{title}</h3>
+        <h3>
+          <b>{title}</b>
+        </h3>
       </div>
       <div className='s-card__description flexible'>
         <p>{description}</p>

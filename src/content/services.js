@@ -7,11 +7,11 @@ export default [
     offers: [
       {
         id: 1,
-        value: 'Feature Prioritization / Roadmapping',
+        value: 'Feature Prioritization & Roadmapping',
       },
       {
         id: 2,
-        value: 'Stakeholder Management',
+        value: 'Product Strategy',
       },
       {
         id: 3,
@@ -51,7 +51,7 @@ export default [
     id: 3,
     title: 'Software Development',
     description:
-      'I do more than just talk. A lifelong student of technology, I continually work to gain a deeper appreciation for the makers of the digital era. If I can pitch in too, all the more reason to participate!',
+      'I do more than talk. A lifelong student of technology, I continually work to gain a deeper appreciation for the makers of the digital era. If I can pitch in too, all the more reason to participate!',
     offers: [
       {
         id: 1,
@@ -63,6 +63,10 @@ export default [
       },
       {
         id: 3,
+        value: 'REST / graphQL APIs',
+      },
+      {
+        id: 4,
         value: 'Simple Full Stack Applications',
       },
     ],
