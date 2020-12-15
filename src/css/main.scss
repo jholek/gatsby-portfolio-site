@@ -620,12 +620,16 @@ Classes
 
   &:hover {
     padding: -0.2rem;
-    box-shadow: -0.5rem -0.5rem 0.5rem rgba(253, 197, 0, 0.8),
-      0.5rem 0.5rem 0.5rem rgba(253, 197, 0, 0.8),
-      -0.5rem 0.5rem 0.5rem rgba(253, 197, 0, 0.8),
-      0.5rem -0.5rem 0.5rem rgba(253, 197, 0, 0.8);
+    // box-shadow: -0.5rem -0.5rem 0.5rem rgba(253, 197, 0, 0.8),
+    //   0.5rem 0.5rem 0.5rem rgba(253, 197, 0, 0.8),
+    //   -0.5rem 0.5rem 0.5rem rgba(253, 197, 0, 0.8),
+    //   0.5rem -0.5rem 0.5rem rgba(253, 197, 0, 0.8);
 
-    // box-shadow: 0rem 0.5rem 0.5rem black;
+    box-shadow: -0.25rem -0.25rem rgba(253, 197, 0, 1),
+      0.25rem 0.25rem rgba(253, 197, 0, 1),
+      -0.25rem 0.25rem rgba(253, 197, 0, 1),
+      0.25rem -0.25rem rgba(253, 197, 0, 1);
+
     transform: translateY(-1rem);
     transition: $transition;
   }
