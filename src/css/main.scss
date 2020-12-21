@@ -92,6 +92,7 @@ a {
   border: 2px solid transparent;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  text-align: center;
 
   &__primary {
     background: $primary;
@@ -167,6 +168,11 @@ a {
 Page Styles
 ===============
 */
+
+.page__offset--nav {
+  margin-top: $nav-height;
+}
+
 .error__page {
   background: grey;
   display: grid;
@@ -448,6 +454,8 @@ Classes
   z-index: 1;
   margin-top: 2rem;
   margin-bottom: -1px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .wave__front > *,
@@ -504,6 +512,15 @@ Classes
   .hero__img {
     margin: 1.5rem auto;
     max-width: 50vw;
+  }
+  // Circle back and refactor this. For some reason this fixes the gap that appears only on iPad at this screen size.
+  .wave__front > svg {
+    width: 102vw;
+    margin-left: -5px;
+  }
+  .wave__front--bottom > svg {
+    width: 102vw;
+    margin-left: -5px;
   }
 }
 

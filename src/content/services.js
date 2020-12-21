@@ -51,7 +51,7 @@ export default [
     id: 3,
     title: 'Software Development',
     description:
-      'I do more than talk. A lifelong student of technology, I continually work to gain a deeper appreciation for the makers of the digital era. If I can pitch in too, all the more reason to participate!',
+      'I do more than talk. As a lifelong student of technology, I am always interested to flex my technical muscles and dive into some code.',
     offers: [
       {
         id: 1,

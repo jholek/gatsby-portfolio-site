@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => (
   <footer>
-    <div>Footer Component</div>
+    <div className='content__wrapper flex__container'>Footer Component</div>
   </footer>
 );
 

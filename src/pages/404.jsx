@@ -8,7 +8,7 @@ const Error = () => {
       <main className='error__page'>
         <div>
           <h1>Uh oh! There&apos;s nothing to see here...</h1>
-          <Link to='/' className='btn__primary'>
+          <Link to='/' className='btn btn__primary'>
             Return Home
           </Link>
         </div>

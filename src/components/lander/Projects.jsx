@@ -31,7 +31,6 @@ const Projects = () => (
           />
         </svg>
       </div>
-      Projects Section - content here
     </article>
   </section>
 );

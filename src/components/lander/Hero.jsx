@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'gatsby-image';
-import { Link, graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 
 import SocialLinks from '../SocialLinks';
 
@@ -35,7 +35,7 @@ const Hero = () => {
             </h1>
             <p>
               I work alongside organizations to find novel solutions to everyday
-              challenges though user centric software.
+              challenges though user-centric software.
             </p>
             <div className='hero__actions'>
               <SocialLinks />
