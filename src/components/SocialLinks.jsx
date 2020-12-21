@@ -1,11 +1,13 @@
 import React from 'react';
 import { FaAddressCard, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
+import resumeDownload from '../../static/Jeff_Holek_Resume_2020.pdf';
+
 const links = [
   {
     id: 1,
     icon: <FaAddressCard />,
-    url: 'https://www.github.com/jholek',
+    url: `${resumeDownload}`,
   },
   {
     id: 2,

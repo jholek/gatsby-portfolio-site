@@ -1,11 +1,13 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import resumeDownload from '../../static/Jeff_Holek_Resume_2020.pdf';
 
 const links = [
   {
     id: 1,
     name: 'resume',
-    url: '/resume/',
+    url: `${resumeDownload}`,
+    target: '_blank',
+    rel: 'noopener noreferrer',
   },
   {
     id: 2,
@@ -30,7 +32,9 @@ const NavLinks = ({ styleClass }) => (
     <ul className={`${styleClass ? styleClass : ''}`}>
       {links.map((link) => (
         <li key={link.id} className={`${link.mod ? link.mod : ''}`}>
-          <Link to={link.url}>{link.name}</Link>
+          <a href={link.url} target={link.target} rel={link.rel}>
+            {link.name}
+          </a>
         </li>
       ))}
     </ul>

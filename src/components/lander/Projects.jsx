@@ -31,7 +31,7 @@ const Projects = () => (
           />
         </svg>
       </div>
-      Projects Section - content her
+      Projects Section - content here
     </article>
   </section>
 );

@@ -1,6 +1,7 @@
 import React from 'react';
-import ServiceCard from './ServiceCard';
+import resumeDownload from '../../../static/Jeff_Holek_Resume_2020.pdf';
 
+import ServiceCard from './ServiceCard';
 import services from '../../content/services';
 
 const Services = () => (
@@ -13,20 +14,30 @@ const Services = () => (
 
         <div className='summary__description'>
           <p>
-            One paragraph description of my approach to work. Palo Santo
-            chartreuse yr occupy, pug street art microdosing cronut green juice
-            shaman irony Tumblr next level blue bottle. Cornhole green juice
-            iceland, occupy direct trade vinyl crucifix keytar venmo chartreuse
-            portland paleo gentrify flexitarian cloud bread.
+            A passionate product manager with five years of experience
+            delivering market changing products that delight users.
+          </p>
+          <br></br>
+          <p>
+            I unknowingly built my first software product in the sixth grade. As
+            a child with excess energy and many questions, I was given a
+            challenge to create the classroom website with the hope it could be
+            where I—quietly—channeled my curiosity. Whether my teacher was
+            tapping into an interest I didn’t yet know I had or saw it as an
+            opportunity to keep me occupied, it had the makings of my future
+            career. I was given a problem that needed solving, a market of
+            interested users, and the resources to bring a concept to life.
           </p>
         </div>
         <div className='summary__cta push'>
-          <button
-            type='button'
+          <a
+            href={resumeDownload}
             className='btn btn__primary summary__cta--button'
+            target='_blank'
+            rel='noopener noreferrer'
           >
             View Resume
-          </button>
+          </a>
         </div>
       </div>
       <div className='flex__container expertise__container'>
@@ -36,11 +47,19 @@ const Services = () => (
           </div>
           <div className='expertise__description flexible'>
             <p>
-              One paragraph description of my approach to work. Palo Santo
-              chartreuse yr occupy, pug street art microdosing cronut green
-              juice shaman irony Tumblr next level blue bottle. Cornhole green
-              juice iceland, occupy direct trade vinyl crucifix keytar venmo
-              chartreuse portland paleo gentrify flexitarian cloud bread.
+              Today, I lean on my engineering and business background, in
+              addition to my experience across a wide range of disciplines, to
+              successfully launch B2C and B2B software products. In my approach,
+              I strike the right balance between being pragmatic and
+              results-driven, without neglecting team culture, technical quality
+              and the end user’s needs.
+            </p>
+            <br></br>
+            <p>
+              I’ve worn many hats as an individual contributor and as a leader,
+              influencing how I collect and interpret data, communicate
+              requirements or mockups, and prepare the go-to-market strategies
+              that rally cross-functional stakeholders behind a shared vision.
             </p>
           </div>
         </div>
