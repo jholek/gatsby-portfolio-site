@@ -744,3 +744,28 @@ Classes
   top: 0;
   z-index: -1;
 }
+
+/* ___Contact Flex___ */
+
+.contact__text {
+  display: flex;
+  flex-direction: column;
+  padding-right: 2rem;
+  width: 25%;
+
+  @media screen and (max-width: 976px) {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+
+  @media screen and (max-width: 976px) {
+    width: 100%;
+    padding-right: 0;
+  }
+}
