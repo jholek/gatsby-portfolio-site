@@ -581,11 +581,15 @@ Classes
   }
 
   &__cta {
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 5rem;
     &--button {
-      margin-right: 0.5rem;
+      // margin-right: 0.5rem;
     }
+  }
+
+  &__description {
+    padding-bottom: 1rem;
   }
 
   @media screen and (max-width: 976px) {
@@ -653,7 +657,11 @@ Classes
 }
 
 .card__padding {
-  padding: 0.5rem;
+  padding: 0.5rem 0 0.5rem 1rem;
+
+  @media screen and (max-width: 1340px) {
+    padding: 0.5rem 0;
+  }
 
   @media screen and (max-width: 976px) {
     padding: 1rem 0;
@@ -745,7 +753,7 @@ Classes
   z-index: -1;
 }
 
-/* ___Contact Flex___ */
+/* ___Contact___ */
 
 .contact__text {
   display: flex;
@@ -759,13 +767,62 @@ Classes
   }
 }
 
+.contact__description > p {
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.contact__cta--text {
+  color: $primary-dark;
+}
+
 .contact__form {
   display: flex;
   flex-direction: column;
   width: 75%;
+  padding-top: 2rem;
 
   @media screen and (max-width: 976px) {
     width: 100%;
     padding-right: 0;
   }
+}
+
+.form {
+  &__input {
+    width: 100%;
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f0ecdc;
+    border-radius: 0.5rem;
+    resize: none;
+    padding: 1rem 1rem;
+    margin-bottom: 0.5rem;
+    font-family: roboto;
+    font-size: 1rem;
+    color: $primary-dark;
+
+    &:focus::placeholder {
+      color: transparent;
+    }
+
+    &::placeholder {
+      color: $primary-dark;
+      font-family: roboto;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+  }
+  &__message {
+    height: 10rem;
+  }
+}
+
+.contact__feedback {
+  font-family: roboto;
+  font-size: 1rem;
+  color: $primary;
 }

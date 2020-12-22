@@ -20,7 +20,7 @@ const ContactForm = () => {
       email: '',
       subject: '',
       message: '',
-      feedbackMsg: 'Success!',
+      feedbackMsg: 'Message sent successfully!',
     });
   };
 
@@ -36,6 +36,7 @@ const ContactForm = () => {
         <input type='hidden' name='form-name' value='Contact Form' />
         <div>
           <input
+            className='form__input'
             type='email'
             name='email'
             value={email}
@@ -47,6 +48,7 @@ const ContactForm = () => {
         </div>
         <div>
           <input
+            className='form__input'
             type='text'
             name='subject'
             value={subject}
@@ -58,6 +60,7 @@ const ContactForm = () => {
         </div>
         <div>
           <textarea
+            className='form__input form__message'
             name='message'
             value={message}
             label='Message'
@@ -66,14 +69,16 @@ const ContactForm = () => {
             required
           />
         </div>
-        <div>{feedbackMsg}</div>
-        <button
-          className='btn btn__primary summary__cta--button'
-          type='submit'
-          form='Contact Form'
-        >
-          Send Message
-        </button>
+        <div className='contact__feedback'>{feedbackMsg}</div>
+        <div className='summary__cta push'>
+          <button
+            className='btn btn__primary summary__cta--button'
+            type='submit'
+            form='Contact Form'
+          >
+            Send Message
+          </button>
+        </div>
       </form>
     </div>
   );

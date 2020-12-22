@@ -3,7 +3,7 @@ import React from 'react';
 import ContactForm from './ContactForm';
 
 const Contact = () => (
-  <section className='contact__section'>
+  <section className='contact__section' id='contact'>
     <article className='content__wrapper'>
       <div className='flex__container'>
         <div className='contact__text'>
@@ -11,10 +11,14 @@ const Contact = () => (
             <h2 className='services__title'>Contact.</h2>
           </div>
 
-          <div className='expertise__description flexible'>
-            <p>Have some ideas you need help fleshing out?</p>
+          <div className='contact__description expertise__description flexible'>
+            <p>Have some ideas you need help bringing to market?</p>
             <br />
-            <p>Drop me a line and let&apos;s get in touch.</p>
+            <p>Need help with something technology related?</p>
+            <br />
+            <p className='contact__cta--text'>
+              <b>Drop me a line and let&apos;s get in touch.</b>
+            </p>
           </div>
         </div>
         <ContactForm />
