@@ -24,6 +24,7 @@ const ContactForm = () => {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       data: qs.stringify(formData),
     };
+    console.log(axiosOptions);
 
     axios(axiosOptions)
       .then(() => {
@@ -39,19 +40,19 @@ const ContactForm = () => {
           feedbackMsg:
             'There was a problem submitting your message. Please email me at jeff.holek@gmail.com',
         });
-        console.log(err);
       });
   };
 
   return (
     <div className='contact__form'>
       <form
-        name='Contact Form'
-        id='Contact Form'
+        name='contact-form'
+        id='contact-form'
         method='POST'
         data-netlify='true'
         onSubmit={(e) => onSubmit(e)}
       >
+        <input type='hidden' name='contact-form' value='contact-form' />
         <div>
           <input
             className='form__input'
@@ -92,7 +93,7 @@ const ContactForm = () => {
           <button
             className='btn btn__primary summary__cta--button'
             type='submit'
-            form='Contact Form'
+            form='contact-form'
           >
             Send Message
           </button>
