@@ -24,11 +24,9 @@ const ContactForm = () => {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       data: qs.stringify(formData),
     };
-    console.log({ axiosOptions });
 
     axios(axiosOptions)
-      .then((response) => {
-        console.log(response);
+      .then(() => {
         setFormData({
           email: '',
           subject: '',
