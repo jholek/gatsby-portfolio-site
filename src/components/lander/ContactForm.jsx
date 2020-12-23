@@ -52,7 +52,8 @@ const ContactForm = () => {
         data-netlify='true'
         onSubmit={(e) => onSubmit(e)}
       >
-        <input type='hidden' name='contact-form' value='contact-form' />
+        <input type='hidden' name='form-name' value='contact-form' />
+        <input type='hidden' name='feedbackMsg' value={feedbackMsg} />
         <div>
           <input
             className='form__input'
