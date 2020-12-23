@@ -19,7 +19,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     const axiosOptions = {
-      url: window.location.pathname,
+      url: '/',
       method: 'post',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       data: qs.stringify(formData),
@@ -34,11 +34,13 @@ const ContactForm = () => {
           feedbackMsg: 'Message submitted successfully!',
         });
       })
-      .catch((err) =>
+      .catch((err) => {
         setFormData({
-          feedbackMsg: `${err.response.data.msg}`,
-        }),
-      );
+          feedbackMsg:
+            'There was a problem submitting your message. Please email me at jeff.holek@gmail.com',
+        });
+        console.log(err);
+      });
   };
 
   return (
@@ -50,7 +52,6 @@ const ContactForm = () => {
         data-netlify='true'
         onSubmit={(e) => onSubmit(e)}
       >
-        <input type='hidden' name='form-name' value='Contact Form' />
         <div>
           <input
             className='form__input'
