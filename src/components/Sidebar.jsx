@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import { FaTimes } from 'react-icons/fa';
 
 import NavLinks from './NavLinks';
@@ -21,6 +21,11 @@ const Sidebar = ({ toggleSidebar, isOpen }) => {
       </div>
     </aside>
   );
+};
+
+Sidebar.propTypes = {
+  toggleSidebar: PropTypes.func.isRequired,
+  isOpen: PropTypes.bool.isRequired,
 };
 
 export default Sidebar;

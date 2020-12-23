@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import { FaAlignJustify } from 'react-icons/fa';
 
@@ -20,5 +21,9 @@ const Navbar = ({ toggleSidebar }) => (
     </div>
   </nav>
 );
+
+Navbar.propTypes = {
+  toggleSidebar: PropTypes.func.isRequired,
+};
 
 export default Navbar;

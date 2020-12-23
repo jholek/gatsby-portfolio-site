@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import resumeDownload from '../../static/Jeff_Holek_Resume_2020.pdf';
 
 const links = [
@@ -29,11 +30,11 @@ const links = [
 
 const NavLinks = ({ styleClass, toggleSidebar, isOpen }) => (
   <>
-    <ul className={`${styleClass ? styleClass : ''}`}>
+    <ul className={`${styleClass || ''}`}>
       {links.map((link) => (
         <li key={link.id} className={`${link.mod ? link.mod : ''}`}>
           <a
-            onClick={isOpen && toggleSidebar}
+            onClick={isOpen ? toggleSidebar : undefined}
             href={link.url}
             target={link.target}
             rel={link.rel}
@@ -45,5 +46,11 @@ const NavLinks = ({ styleClass, toggleSidebar, isOpen }) => (
     </ul>
   </>
 );
+
+NavLinks.propTypes = {
+  styleClass: PropTypes.string.isRequired,
+  toggleSidebar: PropTypes.func.isRequired,
+  isOpen: PropTypes.bool.isRequired,
+};
 
 export default NavLinks;

@@ -596,9 +596,6 @@ Classes
   &__cta {
     margin-top: 1rem;
     margin-bottom: 5rem;
-    &--button {
-      // margin-right: 0.5rem;
-    }
   }
 
   &__description {
@@ -839,4 +836,22 @@ Classes
   font-family: roboto;
   font-size: 1rem;
   color: $primary;
+}
+
+/* ___Footer___ */
+
+.footer {
+  &__logo {
+    margin: 4rem auto 2rem auto;
+
+    &--icon {
+      height: 2rem;
+      vertical-align: middle;
+    }
+  }
+  &__copyright {
+    font-size: 0.75rem;
+    font-family: roboto;
+    text-align: center;
+  }
 }

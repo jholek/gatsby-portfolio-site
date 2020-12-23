@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import axios from 'axios';
+import * as qs from 'query-string';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -15,13 +17,30 @@ const ContactForm = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log('Submitted');
-    setFormData({
-      email: '',
-      subject: '',
-      message: '',
-      feedbackMsg: 'Message sent successfully!',
-    });
+
+    const axiosOptions = {
+      url: window.location.pathname,
+      method: 'post',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      data: qs.stringify(formData),
+    };
+    console.log({ axiosOptions });
+
+    axios(axiosOptions)
+      .then((response) => {
+        console.log(response);
+        setFormData({
+          email: '',
+          subject: '',
+          message: '',
+          feedbackMsg: 'Message submitted successfully!',
+        });
+      })
+      .catch((err) =>
+        setFormData({
+          feedbackMsg: `${err.response.data.msg}`,
+        }),
+      );
   };
 
   return (
