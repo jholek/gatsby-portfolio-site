@@ -9,16 +9,16 @@ const links = [
     target: '_blank',
     rel: 'noopener noreferrer',
   },
-  {
-    id: 2,
-    name: 'projects',
-    url: '/projects/',
-  },
-  {
-    id: 3,
-    name: 'blog',
-    url: '/blog/',
-  },
+  // {
+  //   id: 2,
+  //   name: 'projects',
+  //   url: '/projects/',
+  // },
+  // {
+  //   id: 3,
+  //   name: 'blog',
+  //   url: '/blog/',
+  // },
   {
     id: 4,
     name: 'contact',
@@ -27,12 +27,17 @@ const links = [
   },
 ];
 
-const NavLinks = ({ styleClass }) => (
+const NavLinks = ({ styleClass, toggleSidebar, isOpen }) => (
   <>
     <ul className={`${styleClass ? styleClass : ''}`}>
       {links.map((link) => (
         <li key={link.id} className={`${link.mod ? link.mod : ''}`}>
-          <a href={link.url} target={link.target} rel={link.rel}>
+          <a
+            onClick={isOpen && toggleSidebar}
+            href={link.url}
+            target={link.target}
+            rel={link.rel}
+          >
             {link.name}
           </a>
         </li>
