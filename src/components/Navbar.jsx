@@ -6,7 +6,7 @@ import { FaAlignJustify } from 'react-icons/fa';
 import NavLinks from './NavLinks';
 import logo from '../assets/jh_logo.svg';
 
-const Navbar = ({ toggleSidebar }) => (
+const Navbar = ({ isOpen, toggleSidebar }) => (
   <nav className='navbar'>
     <div className='navbar__layout'>
       <div className='navbar__header'>
@@ -17,12 +17,17 @@ const Navbar = ({ toggleSidebar }) => (
           <FaAlignJustify />
         </button>
       </div>
-      <NavLinks styleClass='navbar__links' />
+      <NavLinks
+        isOpen={isOpen}
+        toggleSidebar={toggleSidebar}
+        styleClass='navbar__links'
+      />
     </div>
   </nav>
 );
 
 Navbar.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
   toggleSidebar: PropTypes.func.isRequired,
 };
 

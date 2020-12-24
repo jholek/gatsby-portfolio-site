@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import * as qs from 'query-string';
+// import * as qs from 'query-string';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -19,13 +19,11 @@ const ContactForm = () => {
     e.preventDefault();
 
     const axiosOptions = {
-      url: '/',
+      url: 'https://formspree.io/f/maylljwl',
       method: 'post',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      data: qs.stringify(formData),
+      headers: { 'Content-Type': 'application/json' },
+      data: formData,
     };
-    console.log(axiosOptions);
-
     axios(axiosOptions)
       .then(() => {
         setFormData({
@@ -49,12 +47,12 @@ const ContactForm = () => {
         name='contact-form'
         id='contact-form'
         method='POST'
-        data-netlify='true'
-        data-netlify-honeypot='bot-field'
+        // data-netlify='true'
+        // data-netlify-honeypot='bot-field'
         onSubmit={(e) => onSubmit(e)}
       >
-        <input type='hidden' name='form-name' value='contact-form' />
-        <input type='hidden' name='feedbackMsg' value={feedbackMsg} />
+        {/* <input type='hidden' name='form-name' value='contact-form' />
+        <input type='hidden' name='feedbackMsg' value={feedbackMsg} /> */}
         <div>
           <input
             className='form__input'
