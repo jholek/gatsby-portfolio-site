@@ -1,5 +1,5 @@
 import React from 'react';
-import resumeDownload from '../../../static/Jeff_Holek_Resume_2020.pdf';
+import resumeDownload from '../../../static/Jeff_Holek_Resume_2021.pdf';
 
 import ServiceCard from './ServiceCard';
 import services from '../../content/services';

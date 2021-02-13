@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaAddressCard, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
-import resumeDownload from '../../static/Jeff_Holek_Resume_2020.pdf';
+import resumeDownload from '../../static/Jeff_Holek_Resume_2021.pdf';
 
 const links = [
   {

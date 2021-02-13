@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import resumeDownload from '../../static/Jeff_Holek_Resume_2020.pdf';
+import resumeDownload from '../../static/Jeff_Holek_Resume_2021.pdf';
 
 const links = [
   {
