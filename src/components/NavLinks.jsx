@@ -10,11 +10,13 @@ const links = [
     target: '_blank',
     rel: 'noopener noreferrer',
   },
-  // {
-  //   id: 2,
-  //   name: 'projects',
-  //   url: '/projects/',
-  // },
+  {
+    id: 2,
+    name: 'blog',
+    url: 'https://blog.jeffholek.com',
+    target: '_blank',
+    rel: 'noopener noreferrer',
+  },
   // {
   //   id: 3,
   //   name: 'blog',
