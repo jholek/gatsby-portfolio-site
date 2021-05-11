@@ -13,7 +13,8 @@ const links = [
   {
     id: 2,
     name: 'blog',
-    url: 'https://blog.jeffholek.com',
+    url: 'https://musings-of-a-madman.ghost.io/',
+    // url: 'https://blog.jeffholek.com',
     target: '_blank',
     rel: 'noopener noreferrer',
   },
